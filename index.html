@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <div class="container">
+
+      <div class="item input">0</div>
+
+      <div class="item math type">deg</div>
+      <div class="item math" onclick="f('sin')">sin</div>
+      <div class="item math" onclick="f('cos')">cos</div>
+      <div class="item clean" onclick="clean()">C</div>
+      <div class="item back" onclick="back()">&#8656;</div>
+
+      <div class="item math" onclick="operation('^')">x<span class="upper">y</span></div>
+      <div class="item math" onclick="f('tan')">tan</div>
+      <div class="item math" onclick="f('ctg')">ctg</div>
+      <div class="item math" onclick="insert('(')">(</div>
+      <div class="item math" onclick="insert(')')">)</div>
+
+      <div class="item math" onclick="operation('sqr')">x<span class="upper">2</span></div>
+      <div class="item math" onclick="log('lg')">log</div>
+      <div class="item math" onclick="log('ln')">ln</div>
+      <div class="item math" onclick="percent()">%</div>
+      <div class="item math" onclick="insert('/')">&divide;</div>
+
+      <div class="item math" onclick="operation('^-1')">x<span class="upper">-1</span></div>
+      <div class="item number" onclick="insert('1')">1</div>
+      <div class="item number" onclick="insert('2')">2</div>
+      <div class="item number" onclick="insert('3')">3</div>
+      <div class="item math" onclick="insert('*')">&times;</div>
+
+      <div class="item math" onclick="fact()">x!</div>
+      <div class="item number" onclick="insert('4')">4</div>
+      <div class="item number" onclick="insert('5')">5</div>
+      <div class="item number" onclick="insert('6')">6</div>
+      <div class="item math" onclick="insert('-')">-</div>
+
+      <div class="item math" onclick="operation('sqrt')">&radic;x</div>
+      <div class="item number" onclick="insert('7')">7</div>
+      <div class="item number" onclick="insert('8')">8</div>
+      <div class="item number" onclick="insert('9')">9</div>
+      <div class="item math" onclick="insert('+')">+</div>
+
+      <div class="item math" onclick="constant('pi')">&#960;</div>
+      <div class="item math" onclick="constant('e')">e</div>
+      <div class="item zero" onclick="insert('0')">0</div>
+      <div class="item point" onclick="insert('.')">.</div>
+      <div class="item equal" onclick="equal()">=</div>
+   </div>
+
+   <script src="main.js"></script>
+</body>
+
+</html>
